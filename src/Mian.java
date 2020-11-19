@@ -16,7 +16,7 @@ public class Mian {
         contact.passengerPhoneNumber=phone;
         Address address=new Address();
         System.out.println("Enter the street : ");
-        String street=sc.nextLine();
+        String street = sc.nextLine();
         address.passengerStreet=street;
 
         System.out.println("Enter the city : ");
@@ -26,7 +26,27 @@ public class Mian {
         System.out.println("Enter the State : ");
         String state=sc.nextLine();
         address.passengerState=state;
-        System.out.println(address.getAddress());
-        System.out.println(contact.getContact());
+        int choice;
+        System.out.println("which type of Ticket you want to book : ");
+        System.out.println("1.Regular Ticket ");
+        System.out.println("2.Tourist Ticket");
+        choice=sc.nextInt();
+                switch (choice) {
+                    case 1: {
+                        System.out.println("You choosed to book Ticket in RegularTicket ");
+
+                        break;
+                    }
+                    case 2: {
+                        System.out.println("You choosed to book Ticket in TouristTicket");
+                        break;
+                    }
+                    default:
+                        System.out.println("Please choose the correct type");
+                }
+
+
+        //System.out.println(address.getAddress());
+        //System.out.println(contact.getContact());
     }
 }
