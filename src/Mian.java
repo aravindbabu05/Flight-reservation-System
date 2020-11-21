@@ -4,9 +4,10 @@ public class Mian {
     public static void main (String args[])
     {
         Scanner sc=new Scanner(System.in);
-        Contact contact=new Contact();
+
         System.out.println("Enter the name :");
         String name=sc.nextLine();
+        Contact contact=new Contact();
         contact.passengerName=name;
         System.out.println("Enter the EmailId :");
         String email=sc.nextLine();
@@ -25,7 +26,7 @@ public class Mian {
 
         System.out.println("Enter the State : ");
         String state=sc.nextLine();
-        address.passengerState=state;
+       address.passengerState=state;
         int choice;
         System.out.println("which type of Ticket you want to book : ");
         System.out.println("1.Regular Ticket ");
@@ -44,6 +45,9 @@ public class Mian {
                     default:
                         System.out.println("Please choose the correct type");
                 }
+                Flight DeccanAirlines=new Flight( 2048,"Deccan Airlines",30);
+                System.out.println("please Check the Flight detrails : "+DeccanAirlines.getFlightDetails());
+                System.out.println("Number if Availability of the seats : "+DeccanAirlines.availabilityOfSeats());
 
 
         //System.out.println(address.getAddress());

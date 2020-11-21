@@ -5,4 +5,5 @@ public class Address {
 String getAddress(){
      return passengerStreet+", "+passengerCity+",  "+passengerState;
 }
+
 }
