@@ -14,6 +14,10 @@ public class Flight {
     public String getFlightDetails(){
         return "Flight Number: "+flightNumber +"Airline : "+airlineOfFlight+"Capacity: "+capacity+"Number Of Seats Booked"+numberOfSeatsBooked ;
     }
+    public String detailsOfFlight()
+    {
+        return "Flight Number: "+flightNumber +"Airline : "+airlineOfFlight;
+    }
     int availabilityOfSeats()
     {
 

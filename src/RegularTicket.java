@@ -1,8 +1,8 @@
 public class RegularTicket {
 
-    boolean isAvailedFood;
-    boolean isAvailedWater;
-    boolean isAvailedSnacks;
+    String isAvailedFood;
+    String isAvailedWater;
+    String isAvailedSnacks;
     public String getSpecialStatus(){
         return isAvailedFood+",  "+isAvailedWater+",  "+isAvailedSnacks ;
     }
