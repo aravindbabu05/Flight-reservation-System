@@ -18,12 +18,12 @@ public class Flight {
     {
         return "Flight Number: "+flightNumber +"Airline : "+airlineOfFlight;
     }
-    int availabilityOfSeats()
+    public int availabilityOfSeats()
     {
 
         return capacity-numberOfSeatsBooked;
     }
-    int getNumberOfSeatsRequested()
+    public int getNumberOfSeatsRequested()
     {
         return numberOfSeatsRequested;
     }
